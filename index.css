@@ -24,10 +24,11 @@ section {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-image: url(./images/forest.jpg);
+
   box-shadow: inset 0px 0px 400px 200px black;
 }
 section:nth-of-type(1) {
+  background-image: url(./images/forest.jpg);
 }
 section:nth-of-type(2) {
   background-image: url(./images/nature.jpg);
@@ -98,9 +99,6 @@ button:hover {
   display: grid;
   background-color: green;
 }
-/* .contact-control__form > * {
-  flex-grow: 1;
-} */
 
 .input-control {
   display: grid;
