@@ -4,30 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="./index.css" />
     <script src="./app.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <div class="contact-control">
-      <div class="contact-control__icon">X</div>
+      <div class="contact-control__icon">
+        <span class="material-symbols-outlined icon-image"> mail </span>
+      </div>
       <form class="contact-control__form">
         <h2>contact us!</h2>
         <label for="user_name" class="input-control">
           your name
-          <input type="text" name="user_name" id="user_name" />
+          <input type="text" name="user_name" id="user_name" required />
         </label>
         <label for="user_email" class="input-control">
           your email
-          <input type="email" name="user_email" id="user_email" />
+          <input type="email" name="user_email" id="user_email" required />
         </label>
         <label for="user_tel" class="input-control">
           telephone number
-          <input type="tel" name="user_tel" id="user_tel" />
+          <input type="tel" name="user_tel" id="user_tel" required />
         </label>
         <label for="user_message" class="input-control">
           leave a message
-          <textarea name="user_message" id="user_message"></textarea>
+          <textarea name="user_message" id="user_message" required></textarea>
         </label>
         <button type="submit" class="input-control">send</button>
       </form>

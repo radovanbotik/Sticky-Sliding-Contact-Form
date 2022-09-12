@@ -4,6 +4,11 @@
   --font-main: "Fira Sans", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
 }
+/* google icons */
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
 /* general styles */
 * {
   box-sizing: border-box;
@@ -85,7 +90,7 @@ button:hover {
 .contact-control__form {
   flex-grow: 1;
   border: 1px solid rgb(123, 123, 123);
-  padding: 1em;
+  padding: 1em 2em;
 
   display: grid;
   background-color: green;
