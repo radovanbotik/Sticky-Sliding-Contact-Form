@@ -41,9 +41,15 @@ button {
   font-size: inherit;
   padding: 0.75em 0em;
   background-color: greenyellow;
+  color: green;
   outline: none;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  color: green;
+  background-color: white;
 }
 /* modifier classes */
 .contact-control.active {
@@ -73,6 +79,7 @@ button {
   place-items: center;
 
   background-color: greenyellow;
+  color: green;
   cursor: pointer;
 }
 .contact-control__form {
