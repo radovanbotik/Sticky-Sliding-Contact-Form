@@ -33,7 +33,15 @@ textarea {
 input {
   padding: 0.5em 0em;
 }
-
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.75em 0em;
+  background-color: greenyellow;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+}
 /* modifier classes */
 .contact-control.active {
   left: 0;
