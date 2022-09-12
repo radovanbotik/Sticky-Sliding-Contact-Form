@@ -4,6 +4,7 @@
   --font-main: "Fira Sans", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
 }
+/* general styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +25,21 @@ section:nth-child(1) {
 section:nth-child(2) {
   background-color: rgb(175, 175, 175);
 }
+textarea {
+  resize: none;
+  padding: 2em 0;
+  overflow-y: scroll;
+}
+input {
+  padding: 0.5em 0em;
+}
 
+/* modifier classes */
+.contact-control.active {
+  left: 0;
+}
+
+/* layout */
 .contact-control {
   display: flex;
   position: fixed;
@@ -33,11 +48,13 @@ section:nth-child(2) {
   top: 40%;
 
   transition: left 200ms ease-in;
+  text-transform: capitalize;
 }
 
 .contact-control__icon {
-  width: 40px;
+  min-width: 40px;
   height: 40px;
+  min-height: 40px;
   order: 1;
 
   display: grid;
@@ -51,19 +68,14 @@ section:nth-child(2) {
   border: 1px solid rgb(123, 123, 123);
   padding: 1em;
 
-  display: flex;
-  gap: 0.5em;
-  flex-direction: column;
+  display: grid;
+
+  background-color: green;
 }
 .contact-control__form > * {
   flex-grow: 1;
-  /* flex: 1; */
 }
 
 .input-control {
   display: grid;
-}
-
-.active {
-  left: 0;
 }
