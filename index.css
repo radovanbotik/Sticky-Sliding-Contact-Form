@@ -13,8 +13,7 @@
 
 body {
   font-family: var(--font-main);
-  /* display: flex;
-  flex-direction: column; */
+  color: rgb(192, 255, 183);
 }
 section {
   height: 100vh;
@@ -25,6 +24,9 @@ section:nth-child(1) {
 section:nth-child(2) {
   background-color: rgb(175, 175, 175);
 }
+h2 {
+  margin-bottom: 0.5em;
+}
 textarea {
   resize: none;
   padding: 2em 0;
@@ -32,6 +34,7 @@ textarea {
 }
 input {
   padding: 0.5em 0em;
+  text-indent: 0.5em;
 }
 button {
   font-family: inherit;
@@ -54,6 +57,7 @@ button {
   width: 440px;
   left: -400px;
   top: 40%;
+  max-height: 440px;
 
   transition: left 200ms ease-in;
   text-transform: capitalize;
