@@ -21,7 +21,13 @@
         <h2>contact us!</h2>
         <label for="user_name" class="input-control">
           your name
-          <input type="text" name="user_name" id="user_name" required />
+          <input
+            type="text"
+            name="user_name"
+            id="user_name"
+            minlength="4"
+            required
+          />
         </label>
         <label for="user_email" class="input-control">
           your email
@@ -29,13 +35,25 @@
         </label>
         <label for="user_tel" class="input-control">
           telephone number
-          <input type="tel" name="user_tel" id="user_tel" required />
+          <input
+            type="tel"
+            name="user_tel"
+            id="user_tel"
+            pattern="[0-9]{4}[0-9]{3}[0-9]{3}"
+            title="Please enter your number using format 09XX XXX XXX"
+            required
+          />
         </label>
         <label for="user_message" class="input-control">
           leave a message
           <textarea name="user_message" id="user_message" required></textarea>
         </label>
-        <button type="submit" class="input-control">send</button>
+        <button type="submit" class="input-control submit-button">
+          send
+          <span class="material-symbols-outlined send-icon">
+            chevron_right
+          </span>
+        </button>
       </form>
     </div>
     <section></section>

@@ -7,7 +7,7 @@
 /* google icons */
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 /* general styles */
 * {
@@ -92,7 +92,7 @@ button:hover {
 }
 .contact-control__form {
   flex-grow: 1;
-  border: 1px solid rgb(123, 123, 123);
+  border: 2px solid greenyellow;
   padding: 1em 2em;
 
   display: grid;
@@ -107,4 +107,14 @@ button:hover {
 }
 .input-control + .input-control {
   margin-top: 1em;
+}
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.submit-button .send-icon {
+  justify-self: start;
+  font-size: 1.2em;
 }
