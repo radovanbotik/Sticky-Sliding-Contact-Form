@@ -69,13 +69,15 @@ input {
   padding: 1em;
 
   display: grid;
-
   background-color: green;
 }
-.contact-control__form > * {
+/* .contact-control__form > * {
   flex-grow: 1;
-}
+} */
 
 .input-control {
   display: grid;
+}
+.input-control + .input-control {
+  margin-top: 1em;
 }
