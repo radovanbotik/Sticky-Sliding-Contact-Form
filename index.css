@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&display=swap");
+
+:root {
+  --font-main: "Fira Sans", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  /* display: flex;
+  flex-direction: column; */
+}
+section {
+  height: 100vh;
+}
+section:nth-child(1) {
+  background-color: rgb(212, 212, 212);
+}
+section:nth-child(2) {
+  background-color: rgb(175, 175, 175);
+}
+
+.contact-control {
+  display: flex;
+  position: fixed;
+  width: 440px;
+  left: -400px;
+  top: 40%;
+
+  transition: left 200ms ease-in;
+}
+
+.contact-control__icon {
+  width: 40px;
+  height: 40px;
+  order: 1;
+
+  display: grid;
+  place-items: center;
+
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.contact-control__form {
+  flex-grow: 1;
+  border: 1px solid rgb(123, 123, 123);
+  padding: 1em;
+
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+}
+.contact-control__form > * {
+  flex-grow: 1;
+  /* flex: 1; */
+}
+
+.input-control {
+  display: grid;
+}
+
+.active {
+  left: 0;
+}
